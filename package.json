@@ -1,6 +1,6 @@
 {
   "name": "mdast-react-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "compiles markdown to html using mdast-react as a component",
   "main": "index.js",
   "scripts": {
