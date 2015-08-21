@@ -1,0 +1,25 @@
+{
+  "name": "mdast-react-component",
+  "version": "1.0.0",
+  "description": "compiles markdown to html using mdast-react as a component",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "keywords": [
+    "mdast",
+    "react",
+    "component",
+    "markdown"
+  ],
+  "author": "Tom MacWright",
+  "license": "ISC",
+  "dependencies": {
+    "mdast": "^1.1.0",
+    "mdast-react": "^0.1.1",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "tap": "^1.3.2"
+  }
+}
