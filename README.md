@@ -1,21 +1,21 @@
-# MdastComponent
+# RemarkComponent
 
 **Render Markdown in React, in a component.**
 
-This uses [mdast-react](https://github.com/mapbox/mdast-react)
+This uses [remark-react](https://github.com/mapbox/remark-react)
 under the hood, so it **does not use dangerouslySetInnerHTML**, which means
 it doesn't do any innerHTML and has a smaller surface for security vulnerabilities
 than other approaches: its HTML output is guided by React's strict rules.
 
 ## Installation
 
-    npm install --save mdast-react-component
+    npm install --save remark-react-component
 
 ## Usage
 
 ```jsx
 var React = require('react'),
-    MdastComponent = require('mdast-react-component');
+    RemarkComponent = require('remark-react-component');
 
 var App = React.createClass({
     getInitialState() {
@@ -30,9 +30,9 @@ var App = React.createClass({
           value={this.state.text}
           onChange={this.onChange} />
         <div id='preview'>
-          <MdastComponent>
+          <RemarkComponent>
             {this.state.text}
-          </MdastComponent>
+          </RemarkComponent>
         </div>
       </div>);
     }

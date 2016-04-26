@@ -1,13 +1,13 @@
 {
-  "name": "mdast-react-component",
+  "name": "remark-react-component",
   "version": "1.0.1",
-  "description": "compiles markdown to html using mdast-react as a component",
+  "description": "compiles markdown to html using remark-react as a component",
   "main": "index.js",
   "scripts": {
     "test": "tap test.js"
   },
   "keywords": [
-    "mdast",
+    "remark",
     "react",
     "component",
     "markdown"
@@ -15,8 +15,8 @@
   "author": "Tom MacWright",
   "license": "ISC",
   "dependencies": {
-    "mdast": "^1.1.0",
-    "mdast-react": "^0.1.1",
+    "remark": "^4.1.1",
+    "remark-react": "^2.0.0",
     "react": "^0.13.3"
   },
   "devDependencies": {
