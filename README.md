@@ -1,5 +1,11 @@
 # RemarkComponent
 
+---
+
+**This project is no longer maintained.** If you'd like to carry it forward, please fork the repository and release a new package.
+
+---
+
 **Render Markdown in React, in a component.**
 
 This uses [remark-react](https://github.com/mapbox/remark-react)
