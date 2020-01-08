@@ -11,9 +11,22 @@ var RemarkComponent = React.createClass({
   displayName: 'RemarkComponent',
   propTypes: {
     children: React.PropTypes.any.isRequired
+    sanitize: React.PropTypes.bool,
+    prefix: React.PropTypes.string,
+    createElement: React.PropTypes.func,
+    components: React.PropTypes.objectOf(React.PropTypes.element),
+    toHast: React.PropTypes.object,
   },
   render: function() {
-    return remark().use(reactRenderer).process(this.props.children);
+    var options = {
+      sanitize: this.props.sanitize,
+      prefix: this.props.prefix,
+      createElement: this.props.createElement,
+      remarkReactComponents: this.props.components,
+      toHast: this.props.toHast
+    };
+
+    return remark().use(reactRenderer, options).process(this.props.children);
   }
 });
 
